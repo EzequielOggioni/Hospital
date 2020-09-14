@@ -1,0 +1,13 @@
+C:\Users\Paola\source\repos\Hospital\Hospital\bin\Debug\Hospital.exe.config
+C:\Users\Paola\source\repos\Hospital\Hospital\bin\Debug\Hospital.exe
+C:\Users\Paola\source\repos\Hospital\Hospital\bin\Debug\Hospital.pdb
+C:\Users\Paola\source\repos\Hospital\Hospital\obj\Debug\Hospital.csprojAssemblyReference.cache
+C:\Users\Paola\source\repos\Hospital\Hospital\obj\Debug\Hospital.Properties.Resources.resources
+C:\Users\Paola\source\repos\Hospital\Hospital\obj\Debug\Hospital.csproj.GenerateResource.cache
+C:\Users\Paola\source\repos\Hospital\Hospital\obj\Debug\Hospital.csproj.CoreCompileInputs.cache
+C:\Users\Paola\source\repos\Hospital\Hospital\obj\Debug\Hospital.exe
+C:\Users\Paola\source\repos\Hospital\Hospital\obj\Debug\Hospital.pdb
+C:\Users\Paola\source\repos\Hospital\Hospital\obj\Debug\Hospital.Form1.resources
+C:\Users\Paola\source\repos\Hospital\Hospital\bin\Debug\Entidades.dll
+C:\Users\Paola\source\repos\Hospital\Hospital\bin\Debug\Entidades.pdb
+C:\Users\Paola\source\repos\Hospital\Hospital\obj\Debug\Hospital.csproj.CopyComplete

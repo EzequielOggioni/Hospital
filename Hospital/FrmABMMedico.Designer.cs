@@ -2,7 +2,7 @@
 
 namespace Hospital
 {
-    partial class Form1
+    partial class FrmABMMedico
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -66,6 +66,7 @@ namespace Hospital
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(158, 20);
             this.txtNombre.TabIndex = 2;
+            this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
             // 
             // txtApellido
             // 
@@ -73,6 +74,7 @@ namespace Hospital
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(158, 20);
             this.txtApellido.TabIndex = 4;
+            this.txtApellido.Leave += new System.EventHandler(this.txtNombre_Leave);
             // 
             // lblApellido
             // 
@@ -124,7 +126,7 @@ namespace Hospital
             this.cmbEspecialidad.Size = new System.Drawing.Size(158, 21);
             this.cmbEspecialidad.TabIndex = 8;
             // 
-            // Form1
+            // FrmABMMedico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -138,7 +140,7 @@ namespace Hospital
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.btnAceptar);
-            this.Name = "Form1";
+            this.Name = "FrmABMMedico";
             this.Text = "Medico";
             this.Activated += new System.EventHandler(this.Form1_Activated);
             this.Load += new System.EventHandler(this.Form1_Load);

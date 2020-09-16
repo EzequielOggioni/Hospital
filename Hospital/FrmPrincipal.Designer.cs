@@ -32,9 +32,12 @@
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.medicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dtgvPacientes = new System.Windows.Forms.DataGridView();
+            this.btnHardcodearMásPacientes = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvPacientes)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -43,7 +46,7 @@
             this.archivoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(613, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(690, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -62,34 +65,54 @@
             this.medicoToolStripMenuItem,
             this.pacienteToolStripMenuItem});
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.nuevoToolStripMenuItem.Text = "&Nuevo";
             // 
             // medicoToolStripMenuItem
             // 
             this.medicoToolStripMenuItem.Name = "medicoToolStripMenuItem";
-            this.medicoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.medicoToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.medicoToolStripMenuItem.Text = "&Medico";
             this.medicoToolStripMenuItem.Click += new System.EventHandler(this.medicoToolStripMenuItem_Click);
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.salirToolStripMenuItem.Text = "Salir";
             // 
             // pacienteToolStripMenuItem
             // 
             this.pacienteToolStripMenuItem.Name = "pacienteToolStripMenuItem";
-            this.pacienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pacienteToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.pacienteToolStripMenuItem.Text = "Paciente";
             this.pacienteToolStripMenuItem.Click += new System.EventHandler(this.pacienteToolStripMenuItem_Click);
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
+            // 
+            // dtgvPacientes
+            // 
+            this.dtgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvPacientes.Location = new System.Drawing.Point(107, 62);
+            this.dtgvPacientes.Name = "dtgvPacientes";
+            this.dtgvPacientes.Size = new System.Drawing.Size(499, 221);
+            this.dtgvPacientes.TabIndex = 1;
+            // 
+            // btnHardcodearMásPacientes
+            // 
+            this.btnHardcodearMásPacientes.Location = new System.Drawing.Point(121, 314);
+            this.btnHardcodearMásPacientes.Name = "btnHardcodearMásPacientes";
+            this.btnHardcodearMásPacientes.Size = new System.Drawing.Size(462, 23);
+            this.btnHardcodearMásPacientes.TabIndex = 2;
+            this.btnHardcodearMásPacientes.Text = "Boton para agregar más pacientes";
+            this.btnHardcodearMásPacientes.UseVisualStyleBackColor = true;
+            this.btnHardcodearMásPacientes.Click += new System.EventHandler(this.btnHardcodearMásPacientes_Click);
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(613, 308);
+            this.ClientSize = new System.Drawing.Size(690, 392);
+            this.Controls.Add(this.btnHardcodearMásPacientes);
+            this.Controls.Add(this.dtgvPacientes);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmPrincipal";
@@ -98,6 +121,7 @@
             this.Load += new System.EventHandler(this.frm_load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvPacientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,5 +135,7 @@
         private System.Windows.Forms.ToolStripMenuItem medicoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pacienteToolStripMenuItem;
+        private System.Windows.Forms.DataGridView dtgvPacientes;
+        private System.Windows.Forms.Button btnHardcodearMásPacientes;
     }
 }

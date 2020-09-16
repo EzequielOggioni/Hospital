@@ -8,31 +8,79 @@ namespace Entidades
 {
     public class Paciente
     {
+        #region Atributos
+
         string nombre;
         string apellido;
         int dni;
-        Enfermedad dolencia;
-        string descripcionDolencia;
+        List<Enfermedad> listaEnfermedades;
+        List<EDolencias> dolencias;
+        #endregion
 
-        public Enfermedad Dolencia
+        #region Propiedades
+        public string Nombre { get => nombre; }
+
+        public string Apellido { get => apellido; }
+
+        public int Dni { get => dni; }
+
+        public string Dolencias
         {
-            set { dolencia = value; }
-            get { return dolencia ; }
+            get
+            {
+                StringBuilder sb = new StringBuilder();
+                foreach (EDolencias auxDolencia in dolencias)
+                {
+                    sb.AppendLine(auxDolencia.ToString());
+                }
+                return sb.ToString();
+            }
         }
 
+        /// <summary>
+        /// Propiedad indexada para retornar un elemento en especifico.
+        /// </summary>
+        /// <param name="i"> indice que será buscado en la lista</param>
+        /// <returns> Si existe un elemento en ese indice,lo retorna. Sino retorna null </returns>
+        public Enfermedad this[int i]
+        {
+            get
+            {
+                if (listaEnfermedades.Count > i)
+                    return listaEnfermedades[i];
+                return null;
+            }
+        }
 
-        public Paciente(string nombre, string apellido,int dni,string descripcionDolencia)
+        #endregion
+
+        #region Constructores
+        private Paciente()
+        {
+            listaEnfermedades = new List<Enfermedad>();
+        }
+
+        public Paciente(string nombre, string apellido, int dni, List<EDolencias> dolencias)
         {
             this.nombre = nombre;
             this.apellido = apellido;
-            this.dni = dni;            
-            this.descripcionDolencia = descripcionDolencia;
-            
+            this.dni = dni;
+            this.dolencias = dolencias;
+
         }
 
-        //public void SetEnfermedad(Enfermedad dolencia)
-        //{
-        //    this.dolencia = dolencia;
-        //}
+        #endregion
+
+        #region Metodos
+
+        /// <summary>
+        /// Retorna la lista entera de Enfermedades
+        /// </summary>
+        public List<Enfermedad> GetEnfermedades()
+        {
+            return listaEnfermedades;
+        }
+        #endregion
+
     }
 }

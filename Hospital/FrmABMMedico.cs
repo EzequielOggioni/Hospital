@@ -26,7 +26,6 @@ namespace Hospital
         public FrmABMMedico()
         {
             InitializeComponent(); 
-
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -37,7 +36,7 @@ namespace Hospital
             {
                 miMedico = new Medico(this.txtNombre.Text,
                     this.txtApellido.Text, dni, 
-                    this.cmbEspecialidad.SelectedItem.ToString() );
+                    (EEspecialidades)this.cmbEspecialidad.SelectedItem );
                 
                 this.DialogResult = DialogResult.OK;
             }
@@ -46,12 +45,9 @@ namespace Hospital
         private void Form1_Load(object sender, EventArgs e)
         {
             this.txtNombre.Text = " Aqui se setea el nombre";
+            this.cmbEspecialidad.DataSource = Enum.GetValues(typeof(EEspecialidades));
         }
 
-        private void Form1_Activated(object sender, EventArgs e)
-        {
-
-        }
 
         private void txtNombre_Leave(object sender, EventArgs e)
         {

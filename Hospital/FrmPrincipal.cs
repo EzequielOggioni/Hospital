@@ -107,6 +107,9 @@ namespace Hospital
             //forma larga de crear una LISTA a partir de  un array 
             pacientes.Add(new Paciente("Pepe","Peposo",123123, new List<EDolencias>(new EDolencias[] { EDolencias.DolorCabeza, EDolencias.Fiebre, EDolencias.Tos })));
             pacientes.Add(new Paciente("Romeo","Gatusso", 122223, new List<EDolencias>(new EDolencias[] { EDolencias.DolorExtremidades})));
+
+
+            pacientes[0].NombreYApellido();
             
         }
 

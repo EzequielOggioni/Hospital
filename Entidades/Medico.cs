@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Medico
+    public class Medico : Persona
     {
-        string nombre;
-        string apellido;
-        int dni;
+       
         EEspecialidades especialidad;
 
         public Medico(string nombre, string apellido, int dni, EEspecialidades especialidad)
@@ -25,6 +23,7 @@ namespace Entidades
        
         public static bool operator +(Medico[] medicos, Medico medico)
         {
+
             //recorro buscando libres
             for (int i = 0; i < medicos.Length; i++)
             {
@@ -42,5 +41,6 @@ namespace Entidades
             return true;
 
         }
+
     }
 }

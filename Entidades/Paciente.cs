@@ -6,23 +6,15 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Paciente
+    public class Paciente: Persona
     {
         #region Atributos
-
-        string nombre;
-        string apellido;
-        int dni;
         List<Enfermedad> listaEnfermedades;
         List<EDolencias> dolencias;
         #endregion
 
         #region Propiedades
-        public string Nombre { get => nombre; }
-
-        public string Apellido { get => apellido; }
-
-        public int Dni { get => dni; }
+     
 
         public string Dolencias
         {
@@ -37,7 +29,7 @@ namespace Entidades
             }
         }
 
-        /// <summary>
+// <summary>
         /// Propiedad indexada para retornar un elemento en especifico.
         /// </summary>
         /// <param name="i"> indice que será buscado en la lista</param>

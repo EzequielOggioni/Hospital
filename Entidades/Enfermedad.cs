@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Enfermedad
+    public sealed class Enfermedad 
     {
         string nombre;
         EDolencias[] sintomas;

@@ -10,3 +10,9 @@ C:\Users\Isma\Downloads\Hospital-master (1)\Hospital-master\Entidades\obj\Debug\
 C:\Users\Isma\Downloads\Hospital-master (1)\Hospital-master\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Isma\Downloads\Hospital-master (1)\Hospital-master\Entidades\obj\Debug\Entidades.dll
 C:\Users\Isma\Downloads\Hospital-master (1)\Hospital-master\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Entidades\bin\Debug\Entidades.dll
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Entidades\obj\Debug\Entidades.dll
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Entidades\obj\Debug\Entidades.pdb

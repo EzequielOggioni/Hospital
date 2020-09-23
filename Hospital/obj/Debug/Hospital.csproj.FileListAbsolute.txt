@@ -27,3 +27,18 @@ C:\Users\Isma\Downloads\Hospital-master (1)\Hospital-master\Hospital\bin\Debug\H
 C:\Users\Isma\Downloads\Hospital-master (1)\Hospital-master\Hospital\bin\Debug\Entidades.dll
 C:\Users\Isma\Downloads\Hospital-master (1)\Hospital-master\Hospital\bin\Debug\Entidades.pdb
 C:\Users\Isma\Downloads\Hospital-master (1)\Hospital-master\Hospital\obj\Debug\Hospital.csproj.CopyComplete
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\bin\Debug\Hospital.exe.config
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\bin\Debug\Hospital.exe
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\bin\Debug\Hospital.pdb
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\bin\Debug\Entidades.dll
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\bin\Debug\Entidades.pdb
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\obj\Debug\Hospital.csprojAssemblyReference.cache
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\obj\Debug\Hospital.FrmABMMedico.resources
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\obj\Debug\Hospital.FrmABMPaciente.resources
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\obj\Debug\Hospital.FrmPrincipal.resources
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\obj\Debug\Hospital.Properties.Resources.resources
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\obj\Debug\Hospital.csproj.GenerateResource.cache
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\obj\Debug\Hospital.csproj.CoreCompileInputs.cache
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\obj\Debug\Hospital.csproj.CopyComplete
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\obj\Debug\Hospital.exe
+C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\obj\Debug\Hospital.pdb

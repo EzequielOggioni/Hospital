@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Paciente: Persona
+    public sealed class Paciente: Persona
     {
         #region Atributos
+   
         List<Enfermedad> listaEnfermedades;
         List<EDolencias> dolencias;
         #endregion
@@ -47,20 +48,13 @@ namespace Entidades
         #endregion
 
         #region Constructores
-        private Paciente()
+     
+        public Paciente(string nombre, string apellido, int dni, List<EDolencias> dolencias):base(nombre,apellido,dni)
         {
             listaEnfermedades = new List<Enfermedad>();
+            this.dolencias =  dolencias;
         }
-
-        public Paciente(string nombre, string apellido, int dni, List<EDolencias> dolencias)
-        {
-            this.nombre = nombre;
-            this.apellido = apellido;
-            this.dni = dni;
-            this.dolencias = dolencias;
-
-        }
-
+      
         #endregion
 
         #region Metodos
@@ -70,6 +64,7 @@ namespace Entidades
         /// </summary>
         public List<Enfermedad> GetEnfermedades()
         {
+
             return listaEnfermedades;
         }
         #endregion

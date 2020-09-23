@@ -16,6 +16,7 @@ namespace Hospital
     {
 
         List<Paciente> pacientes;
+        List<Persona> listaPersonasDelHospital; 
         Medico[] medicos;
 
         public FrmPrincipal()
@@ -23,6 +24,7 @@ namespace Hospital
             InitializeComponent();
             medicos = new Medico[1];
             pacientes = new List<Paciente>();
+            listaPersonasDelHospital = new List<Persona>();
         }
 
         private void medicoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -51,14 +53,14 @@ namespace Hospital
         private void CargarDatagridPacientes()
         {
             this.dtgvPacientes.DataSource = null;
-            this.dtgvPacientes.DataSource = pacientes;
+            this.dtgvPacientes.DataSource = listaPersonasDelHospital;
             ConfiguracionDatagrid();
         }
 
         private void ConfiguracionDatagrid()
         {
               
-            this.dtgvPacientes.Columns[3].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+         //   this.dtgvPacientes.Columns[3].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             this.dtgvPacientes.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 
         }
@@ -105,12 +107,51 @@ namespace Hospital
         {
 
             //forma larga de crear una LISTA a partir de  un array 
-            pacientes.Add(new Paciente("Pepe","Peposo",123123, new List<EDolencias>(new EDolencias[] { EDolencias.DolorCabeza, EDolencias.Fiebre, EDolencias.Tos })));
-            pacientes.Add(new Paciente("Romeo","Gatusso", 122223, new List<EDolencias>(new EDolencias[] { EDolencias.DolorExtremidades})));
+
+            listaPersonasDelHospital.Add(new Paciente("Romeo","Gatusso", 122223, new List<EDolencias>(new EDolencias[] { EDolencias.DolorExtremidades})));
+
+            listaPersonasDelHospital.Add(new Paciente("Pepe", "Peposo", 123123, new List<EDolencias>(new EDolencias[] { EDolencias.DolorCabeza, EDolencias.Fiebre, EDolencias.Tos })));
+
+            listaPersonasDelHospital.Add(new Medico("Eze", "Fede", 33333, EEspecialidades.Cardiologia));
+
+            Paciente miPaciente;
+            Medico miMedico;
+
+            foreach (Persona auxPersona in listaPersonasDelHospital) 
+            {
+                //if (auxPersona is Paciente)
+                //{
+                //    miPaciente = (Paciente)auxPersona;
+                //}
+                //else
+                //{
+                //    miMedico = (Medico)auxPersona;
+                //}
+
+                // Sugerido por Ezequiel
+                //if(auxPersona.GetType() == typeof(Paciente))
+                //{
+
+                //}
 
 
-            pacientes[0].NombreYApellido();
-            
+                // SUGERIDO POR EZEQUIEL
+                //if(auxPersona.GetType().ToString() == "Entidades.Paciente")
+                //{
+
+                //}
+
+            }
+
+
+
+
+
+
+
+
+            CargarDatagridPacientes();
+
         }
 
         private void btnHardcodearMásPacientes_Click(object sender, EventArgs e)

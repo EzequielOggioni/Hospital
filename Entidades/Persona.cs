@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Persona   // la vamos a usar como clase base 
+    public abstract class Persona   // la vamos a usar como clase base 
     {
         protected string nombre; // es privado para clases externas a la relacion de herencia
         protected string apellido;
@@ -37,6 +37,15 @@ namespace Entidades
         }
 
 
+
+        public Persona(string nombre, string apellido, int dni)
+        {
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.dni = dni;
+        }
+
+  
         public string NombreYApellido()
         {
             return string.Format($"El nombre es {this.nombre} y el apellido es {this.apellido}  ");

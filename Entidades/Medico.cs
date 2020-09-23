@@ -6,21 +6,20 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Medico : Persona
+    public sealed class Medico : Persona
     {
        
         EEspecialidades especialidad;
 
-        public Medico(string nombre, string apellido, int dni, EEspecialidades especialidad)
+        public Medico(string nombre, string apellido, int dni, EEspecialidades especialidad):base(nombre,apellido,dni)
         {
-            this.nombre = nombre;
-            this.apellido = apellido;
-            this.dni = dni;
+           
             this.especialidad = especialidad;
 
         }
 
-       
+    
+
         public static bool operator +(Medico[] medicos, Medico medico)
         {
 

@@ -43,8 +43,11 @@
   <ItemGroup>
     <Compile Include="Enfermedad.cs" />
     <Compile Include="Enumerados.cs" />
+    <Compile Include="EObraSocial.cs" />
+    <Compile Include="EPrepaga.cs" />
     <Compile Include="Medico.cs" />
     <Compile Include="Paciente.cs" />
+    <Compile Include="PacienteObraSocial.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SerVivo.cs" />

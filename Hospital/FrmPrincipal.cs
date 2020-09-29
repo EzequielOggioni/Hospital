@@ -112,6 +112,9 @@ namespace Hospital
 
             listaPersonasDelHospital.Add(new Paciente("Pepe", "Peposo", 123123, new List<EDolencias>(new EDolencias[] { EDolencias.DolorCabeza, EDolencias.Fiebre, EDolencias.Tos })));
 
+            listaPersonasDelHospital.Add(new PacienteObraSocial("Pepe", "Peposo", 123123, new List<EDolencias>(new EDolencias[] { EDolencias.DolorCabeza, EDolencias.Fiebre, EDolencias.Tos }),EObraSocial.OSOCNA,EPrepaga.Ninguna));
+
+
             listaPersonasDelHospital.Add(new Medico("Eze", "Fede", 33333, EEspecialidades.Cardiologia));
 
             Paciente miPaciente;
@@ -164,13 +167,6 @@ namespace Hospital
 
         private void mensajersMolestosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            Persona miPersona= new Paciente("Pepe", "Peposo", 123123, new List<EDolencias>(new EDolencias[] { EDolencias.DolorCabeza, EDolencias.Fiebre, EDolencias.Tos }));
-
-            miPersona.Esperar("15");
-            miPersona = new Medico("Eze", "Fede", 33333, EEspecialidades.Cardiologia);
-            miPersona.Esperar("15");
-
 
             foreach (Persona persona in listaPersonasDelHospital)
             {

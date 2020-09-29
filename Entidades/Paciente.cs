@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public sealed class Paciente: Persona
+    public class Paciente: Persona
     {
         #region Atributos
    
@@ -88,11 +88,11 @@ namespace Entidades
 
         }
 
-        public string NombreYApellido()
-        {
-            return "";
-        }
 
+        public virtual double CalcularCosto()
+        {
+            return this.listaEnfermedades.Count * 259.66; 
+        }
 
         //public new string Esperar(string tiempo)
         //{

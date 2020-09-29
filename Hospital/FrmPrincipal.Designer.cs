@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,6 +37,8 @@
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dtgvPacientes = new System.Windows.Forms.DataGridView();
             this.btnHardcodearMásPacientes = new System.Windows.Forms.Button();
+            this.mensajersMolestosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mensajesMolestos2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvPacientes)).BeginInit();
             this.SuspendLayout();
@@ -64,42 +66,44 @@
             // 
             this.nuevoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.medicoToolStripMenuItem,
-            this.pacienteToolStripMenuItem});
+            this.pacienteToolStripMenuItem,
+            this.mensajersMolestosToolStripMenuItem,
+            this.mensajesMolestos2ToolStripMenuItem});
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoToolStripMenuItem.Text = "&Nuevo";
             // 
             // medicoToolStripMenuItem
             // 
             this.medicoToolStripMenuItem.Name = "medicoToolStripMenuItem";
-            this.medicoToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.medicoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.medicoToolStripMenuItem.Text = "&Medico";
             this.medicoToolStripMenuItem.Click += new System.EventHandler(this.medicoToolStripMenuItem_Click);
             // 
             // pacienteToolStripMenuItem
             // 
             this.pacienteToolStripMenuItem.Name = "pacienteToolStripMenuItem";
-            this.pacienteToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.pacienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pacienteToolStripMenuItem.Text = "Paciente";
             this.pacienteToolStripMenuItem.Click += new System.EventHandler(this.pacienteToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
             // dtgvPacientes
             // 
             this.dtgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvPacientes.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvPacientes.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgvPacientes.Location = new System.Drawing.Point(107, 62);
             this.dtgvPacientes.Name = "dtgvPacientes";
             this.dtgvPacientes.Size = new System.Drawing.Size(499, 221);
@@ -114,6 +118,20 @@
             this.btnHardcodearMásPacientes.Text = "Boton para agregar más pacientes";
             this.btnHardcodearMásPacientes.UseVisualStyleBackColor = true;
             this.btnHardcodearMásPacientes.Click += new System.EventHandler(this.btnHardcodearMásPacientes_Click);
+            // 
+            // mensajersMolestosToolStripMenuItem
+            // 
+            this.mensajersMolestosToolStripMenuItem.Name = "mensajersMolestosToolStripMenuItem";
+            this.mensajersMolestosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mensajersMolestosToolStripMenuItem.Text = "Mensajers Molestos";
+            this.mensajersMolestosToolStripMenuItem.Click += new System.EventHandler(this.mensajersMolestosToolStripMenuItem_Click);
+            // 
+            // mensajesMolestos2ToolStripMenuItem
+            // 
+            this.mensajesMolestos2ToolStripMenuItem.Name = "mensajesMolestos2ToolStripMenuItem";
+            this.mensajesMolestos2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mensajesMolestos2ToolStripMenuItem.Text = "Mensajes Molestos2";
+            this.mensajesMolestos2ToolStripMenuItem.Click += new System.EventHandler(this.mensajesMolestos2ToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -146,5 +164,7 @@
         private System.Windows.Forms.ToolStripMenuItem pacienteToolStripMenuItem;
         private System.Windows.Forms.DataGridView dtgvPacientes;
         private System.Windows.Forms.Button btnHardcodearMásPacientes;
+        private System.Windows.Forms.ToolStripMenuItem mensajersMolestosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mensajesMolestos2ToolStripMenuItem;
     }
 }

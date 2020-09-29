@@ -67,6 +67,38 @@ namespace Entidades
 
             return listaEnfermedades;
         }
+
+
+        public override string DatosDePersona()
+        {
+            return $"Paciente: {this.NombreYApellido()}";
+        }
+
+        public override string DatosDePersona(string titulo)
+        {
+            return string.Empty;
+        }
+
+        public override bool Enfermar
+        {
+            get
+            {
+                return this.dolencias.Count > 2;
+            }           
+
+        }
+
+        public string NombreYApellido()
+        {
+            return "";
+        }
+
+
+        //public new string Esperar(string tiempo)
+        //{
+        //    return $"Espero que haya traido algo para leer por {tiempo}";
+        //}
+
         #endregion
 
     }

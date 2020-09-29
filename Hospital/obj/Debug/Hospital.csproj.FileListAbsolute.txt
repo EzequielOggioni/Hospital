@@ -42,3 +42,4 @@ C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\obj\Debug\Hosp
 C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\obj\Debug\Hospital.csproj.CopyComplete
 C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\obj\Debug\Hospital.exe
 C:\Users\Isma\Documents\Facultad\PPS\1erParcial\Hospital\Hospital\obj\Debug\Hospital.pdb
+C:\Users\Paola\source\repos\Hospital\Hospital\obj\Debug\Hospital.FrmABMPaciente.resources

@@ -161,5 +161,42 @@ namespace Hospital
 
             CargarDatagridPacientes();
         }
+
+        private void mensajersMolestosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Persona miPersona= new Paciente("Pepe", "Peposo", 123123, new List<EDolencias>(new EDolencias[] { EDolencias.DolorCabeza, EDolencias.Fiebre, EDolencias.Tos }));
+
+            miPersona.Esperar("15");
+            miPersona = new Medico("Eze", "Fede", 33333, EEspecialidades.Cardiologia);
+            miPersona.Esperar("15");
+
+
+            foreach (Persona persona in listaPersonasDelHospital)
+            {
+               MessageBox.Show( persona.DatosDePersona());
+            }
+        }
+
+        private void mensajesMolestos2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Random random = new Random(DateTime.Now.Millisecond);
+
+            foreach (Persona persona in listaPersonasDelHospital)
+            {
+                MessageBox.Show(persona.Esperar(random.Next(10,200).ToString()));
+            }
+
+
+            foreach (Persona persona in listaPersonasDelHospital)
+            {
+                if (persona is Paciente)
+                    MessageBox.Show(((Paciente)persona).Esperar(random.Next(10, 200).ToString()));
+                else
+                    MessageBox.Show(((Medico)persona).Esperar(random.Next(10, 200).ToString()));
+            }
+
+        }
     }
 }

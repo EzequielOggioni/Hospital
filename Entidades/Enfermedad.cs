@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public sealed class Enfermedad 
+    public sealed class Enfermedad
     {
         string nombre;
         EDolencias[] sintomas;
@@ -15,7 +15,7 @@ namespace Entidades
         {
             sintomas = new EDolencias[5];
         }
-        public Enfermedad(string nombre): this()
+        public Enfermedad(string nombre) : this()
         {
             this.nombre = nombre;
         }
@@ -24,5 +24,11 @@ namespace Entidades
             this.sintomas = sintomas;
 
         }
+
+        public override string ToString()
+        {
+            return this.nombre;
+        }
+
     }
 }

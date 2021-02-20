@@ -52,11 +52,11 @@
     <Compile Include="FrmABMMedico.Designer.cs">
       <DependentUpon>FrmABMMedico.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAbmPaciente.cs">
+    <Compile Include="FrmABMPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAbmPaciente.Designer.cs">
-      <DependentUpon>FrmAbmPaciente.cs</DependentUpon>
+    <Compile Include="FrmABMPaciente.Designer.cs">
+      <DependentUpon>FrmABMPaciente.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
@@ -69,8 +69,8 @@
     <EmbeddedResource Include="FrmABMMedico.resx">
       <DependentUpon>FrmABMMedico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAbmPaciente.resx">
-      <DependentUpon>FrmAbmPaciente.cs</DependentUpon>
+    <EmbeddedResource Include="FrmABMPaciente.resx">
+      <DependentUpon>FrmABMPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>

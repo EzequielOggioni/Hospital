@@ -114,13 +114,6 @@ namespace Hospital
             // 
             this.cmbEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEspecialidad.FormattingEnabled = true;
-            this.cmbEspecialidad.Items.AddRange(new object[] {
-            "Pediatra",
-            "Oncologia",
-            "Medicina General",
-            "Urologia",
-            "Radiologia",
-            "Traumatologia"});
             this.cmbEspecialidad.Location = new System.Drawing.Point(125, 147);
             this.cmbEspecialidad.Name = "cmbEspecialidad";
             this.cmbEspecialidad.Size = new System.Drawing.Size(158, 21);
@@ -142,7 +135,6 @@ namespace Hospital
             this.Controls.Add(this.btnAceptar);
             this.Name = "FrmABMMedico";
             this.Text = "Medico";
-            this.Activated += new System.EventHandler(this.Form1_Activated);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

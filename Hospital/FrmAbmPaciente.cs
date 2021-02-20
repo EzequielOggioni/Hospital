@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Hospital
 {
-    public partial class FrmAbmPaciente : Form
+    public partial class FrmABMPaciente : Form
     {
         private Paciente paciente;
 
@@ -22,15 +22,13 @@ namespace Hospital
         }
 
 
-        public FrmAbmPaciente()
+        public FrmABMPaciente()
         {
             InitializeComponent();
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            this.paciente = new Paciente("Pepe", "Peposo", 12312344, "Duele la muela");
-
             this.DialogResult = DialogResult.OK;
         }
     }

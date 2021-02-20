@@ -1,6 +1,6 @@
 ﻿namespace Hospital
 {
-    partial class FrmAbmPaciente
+    partial class FrmABMPaciente
     {
         /// <summary>
         /// Required designer variable.

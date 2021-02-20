@@ -6,33 +6,100 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Paciente
+    public class Paciente: Persona
     {
-        string nombre;
-        string apellido;
-        int dni;
-        Enfermedad dolencia;
-        string descripcionDolencia;
+        #region Atributos
+   
+        List<Enfermedad> listaEnfermedades;
+        List<EDolencias> dolencias;
+        #endregion
 
-        public Enfermedad Dolencia
+        #region Propiedades
+     
+
+        public string Dolencias
         {
-            set { dolencia = value; }
-            get { return dolencia ; }
+            get
+            {
+                StringBuilder sb = new StringBuilder();
+                foreach (EDolencias auxDolencia in dolencias)
+                {
+                    sb.AppendLine(auxDolencia.ToString());
+                }
+                return sb.ToString();
+            }
+        }
+
+// <summary>
+        /// Propiedad indexada para retornar un elemento en especifico.
+        /// </summary>
+        /// <param name="i"> indice que será buscado en la lista</param>
+        /// <returns> Si existe un elemento en ese indice,lo retorna. Sino retorna null </returns>
+        public Enfermedad this[int i]
+        {
+            get
+            {
+                if (listaEnfermedades.Count > i)
+                    return listaEnfermedades[i];
+                return null;
+            }
+        }
+
+        #endregion
+
+        #region Constructores
+     
+        public Paciente(string nombre, string apellido, int dni, List<EDolencias> dolencias):base(nombre,apellido,dni)
+        {
+            listaEnfermedades = new List<Enfermedad>();
+            this.dolencias =  dolencias;
+        }
+      
+        #endregion
+
+        #region Metodos
+
+        /// <summary>
+        /// Retorna la lista entera de Enfermedades
+        /// </summary>
+        public List<Enfermedad> GetEnfermedades()
+        {
+
+            return listaEnfermedades;
         }
 
 
-        public Paciente(string nombre, string apellido,int dni,string descripcionDolencia)
+        public override string DatosDePersona()
         {
-            this.nombre = nombre;
-            this.apellido = apellido;
-            this.dni = dni;            
-            this.descripcionDolencia = descripcionDolencia;
-            
+            return $"Paciente: {this.NombreYApellido()}";
         }
 
-        //public void SetEnfermedad(Enfermedad dolencia)
+        public override string DatosDePersona(string titulo)
+        {
+            return string.Empty;
+        }
+
+        public override bool Enfermar
+        {
+            get
+            {
+                return this.dolencias.Count > 2;
+            }           
+
+        }
+
+
+        public virtual double CalcularCosto()
+        {
+            return this.listaEnfermedades.Count * 259.66; 
+        }
+
+        //public new string Esperar(string tiempo)
         //{
-        //    this.dolencia = dolencia;
+        //    return $"Espero que haya traido algo para leer por {tiempo}";
         //}
+
+        #endregion
+
     }
 }

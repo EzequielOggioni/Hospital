@@ -6,25 +6,34 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Medico
+    public class Medico : Persona
     {
-        string nombre;
-        string apellido;
-        int dni;
-        string especialidad;
+        private int myVar;
 
-        public Medico(string nombre, string apellido, int dni, string especialidad)
+      
+        public EEspecialidades especialidad;
+
+
+
+        public Medico(string nombre, string apellido, int dni, EEspecialidades especialidad) : base(nombre, apellido, dni)
         {
-            this.nombre = nombre;
-            this.apellido = apellido;
-            this.dni = dni;
+
             this.especialidad = especialidad;
 
         }
 
-       
+        public override bool Enfermar
+        {
+            get
+            {
+                return this.especialidad == EEspecialidades.Pedriatria;
+            }
+        }
+
+
         public static bool operator +(Medico[] medicos, Medico medico)
         {
+
             //recorro buscando libres
             for (int i = 0; i < medicos.Length; i++)
             {
@@ -36,11 +45,27 @@ namespace Entidades
             }
 
             //si no encontre libres agrego un lugar
-            Array.Resize<Medico>(ref medicos, medicos.Length  + 1);
+            Array.Resize<Medico>(ref medicos, medicos.Length + 1);
 
             medicos[medicos.Length - 1] = medico;
             return true;
 
+        }
+
+        public override string DatosDePersona()
+        {
+            return $"Medico: {this.NombreYApellido()}";
+        }
+
+        public override string DatosDePersona(string titulo)
+        {
+
+            return $"Medico:{titulo} {this.NombreYApellido()}";
+        }
+
+        public override string Esperar(string tiempo)
+        {
+            return $"Me sacan el presentismo por {tiempo} minutos";
         }
     }
 }
